@@ -1,0 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.firstSlider li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+}

@@ -1,0 +1,19 @@
+* {
+  padding:0;
+  margin:0;
+}
+
+.crossbrowserInlineBlock() {
+  // http://blog.mozilla.org/webdev/2009/02/20/cross-browser-inline-block/
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+}
+
+.firstSlider {
+  li {
+    .crossbrowserInlineBlock();
+  }
+}
