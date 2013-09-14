@@ -2,20 +2,68 @@
   padding: 0;
   margin: 0;
 }
+body {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 44px;
+}
+img {
+  width: 300px;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 800px;
+  min-height: 400px;
+  background: pink;
+}
+/*.crossbrowserInlineBlock() {
+  // whitspace-fix by http://www.lifeathighroad.com/web-development/css-web-development/inline-block-whitespace-workaround/
+  // http://blog.mozilla.org/webdev/2009/02/20/cross-browser-inline-block/
+  display:-moz-inline-stack;
+  display:inline-block;
+  vertical-align:top;
+  zoom:1;
+  *display:inline;
+}
+
+.whitespaceFix() {
+  ul {
+
+    letter-spacing:-4px; // whitespace-fix
+    word-spacing:-4px; // whitespace-fix
+  }
+  li {
+    letter-spacing:normal; // whitespace-fix
+    word-spacing:normal; // whitespace-fix
+  }
+}*/
 .visibleForMeasure {
   position: absolute !important;
   visibility: hidden !important;
   display: block !important;
 }
+.visibleForMeasure ul {
+  width: 100000px;
+}
 .firstSlider {
   display: none;
+  background: blue;
+  overflow: hidden;
+}
+.firstSlider ul {
+  background: green;
+  list-style: none;
+}
+.firstSlider ul:before,
+.firstSlider ul:after {
+  content: "";
+  display: table;
+}
+.firstSlider ul:after {
+  clear: both;
 }
 .firstSlider li {
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: top;
-  zoom: 1;
-  *display: inline;
+  float: left;
   margin-right: 10px;
   padding: 20px;
+  background: red;
 }

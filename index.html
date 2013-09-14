@@ -5,27 +5,97 @@
   <title>Slider23</title>
 
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
 
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="imagesLoaded.js"></script>
+  <script type="text/javascript" src="transit.js"></script>
   <script type="text/javascript" src="slider23.js"></script>
 </head>
 <body>
-  <div class="firstSlider">
-    <ul>
-      <li><img src="http://lorempixel.com/800/400/sports/" alt=""></li>
-      <li><img src="http://lorempixel.com/800/400/sports/" alt=""></li>
-      <li><img src="http://lorempixel.com/800/400/sports/" alt=""></li>
-      <li><img src="http://lorempixel.com/800/400/sports/" alt=""></li>
-      <li><img src="http://lorempixel.com/800/400/sports/" alt=""></li>
-    </ul>
-    <div class="arrows">
-      <a href="#">left</a>
-      <a href="#">right</a>
+  <div class="wrapper">
+    <div class="firstSlider">
+      <ul>
+        <li>Dies ist ein Test...</li>
+        <li>Dies ist ein Test... Dies ist ein Test...</li>
+        <li><img src="img1.jpg" alt=""></li>
+        <li><img src="img2.jpg" alt=""></li>
+        <li>Dies ist ein Test... Dies ist ein Test...</li>
+        <li>Dies ist ein Test... fdfagfsgsfsd</li>
+        <li>Dies ist ein Test... eFADSFADS</li>
+        <li>Dies ist einasdaas Test...</li>
+        <li>Dies ist ein Test... Dies ist ein Test...</li>
+        <li>Dies ist ein Tadsdsest... Dies ist ein Test...</li>
+        <li>Dies ist ein Test... fdfagfsgsfsd</li>
+        <li>Dies ist ein Test... eFADSFADS</li>
+        <li>Dies ist ein Test...</li>
+        <li>Dies ist ein Test... Dies ist ein Test...</li>
+        <li>Dieasdass ist ein Test... Dies ist ein Test...</li>
+        <li>Dies ist ein Test... fdfagfsgsfsd</li>
+        <li>Dies ist ein Test... eFADSFADS</li>
+        <li>Dies ist ein Test...</li>
+        <li>Dies iasddsast ein Test... Dies ist ein Test...</li>
+        <li>Dies ist ein Test... Dies ist ein Test...</li>
+        <li>Dies ist eiaadsdasn Test... fdfagfsgsfsd</li>
+        <li>Dies ist ein Test... eFADSFADS</li>
+        <li>Dies ist ein Test...</li>
+        <li>Dies ist eisaddasn Test... Dies ist ein Test...</li>
+        <li>Dies ist eiasdsasadsan Test... Dies ist ein Test...</li>
+        <li>Dies ist ein Test... fdfagfsgsfsd</li>
+        <li>Dies ist ein Test... eFADSFADS</li>
+        <li>Dies ist einasdaas Test...</li>
+        <li>Dies ist ein Test... Dies ist ein Test...</li>
+        <li>Dies ist ein Tadsdsest... Dies ist ein Test...</li>
+        <li>Dies ist ein Test... fdfagfsgsfsd</li>
+        <li>Dies ist ein Test... eFADSFADS</li>
+        <li>Dies ist ein Test...</li>
+        <li>Dies ist ein Test... Dies ist ein Test...</li>
+        <li>Dieasdass ist ein Test... Dies ist ein Test...</li>
+        <li>Dies ist ein Test... fdfagfsgsfsd</li>
+        <li>Dies ist ein Test... eFADSFADS</li>
+        <li>Dies ist ein Test...</li>
+        <li>Dies iasddsast ein Test... Dies ist ein Test...</li>
+        <li>Dies ist ein Test... Dies ist ein Test...</li>
+        <li>Dies ist eiaadsdasn Test... fdfagfsgsfsd</li>
+        <li>Dies ist ein Test... eFADSFADS</li>
+        <li>Dies ist ein Test...</li>
+        <li>Dies ist eisaddasn Test... Dies ist ein Test...</li>
+        <li>Dies ist eiasdsasadsan Test... Dies ist ein Test...</li>
+        <li>Dies ist ein Test... fdfagfsgsfsd</li>
+        <li>Dies ist ein Test... eFADSFADS</li>
+        <li>Dies ist einasdaas Test...</li>
+        <li>Dies ist ein Test... Dies ist ein Test...</li>
+        <li>Dies ist ein Tadsdsest... Dies ist ein Test...</li>
+        <li>Dies ist ein Test... fdfagfsgsfsd</li>
+        <li>Dies ist ein Test... eFADSFADS</li>
+        <li>Dies ist ein Test...</li>
+        <li>Dies ist ein Test... Dies ist ein Test...</li>
+        <li>Dieasdass ist ein Test... Dies ist ein Test...</li>
+        <li>Dies ist ein Test... fdfagfsgsfsd</li>
+        <li>Dies ist ein Test... eFADSFADS</li>
+        <li>Dies ist ein Test...</li>
+        <li>Dies iasddsast ein Test... Dies ist ein Test...</li>
+        <li>Dies ist ein Test... Dies ist ein Test...</li>
+        <li>Dies ist eiaadsdasn Test... fdfagfsgsfsd</li>
+        <li>Dies ist ein Test... eFADSFADS</li>
+        <li>Dies ist ein Test...</li>
+        <li>Dies ist eisaddasn Test... Dies ist ein Test...</li>
+        <li>Dies ist eiasdsasadsan Test... Dies ist ein Test...</li>
+        <li>Dies ist ein Test... fdfagfsgsfsd</li>
+        <li>Dies ist ein Test... eFADSFADS</li>
+      </ul>
+      <div class="arrows">
+        <a href="#">left</a>
+        <a href="#">right</a>
+      </div>
     </div>
   </div>
   <script>
     $(function() {
-      $('.firstSlider').slider23();
+      $('.firstSlider').imagesLoaded().always( function( instance ) {
+        $('.firstSlider').slider23();
+      });
+
     });
   </script>
 </body>
